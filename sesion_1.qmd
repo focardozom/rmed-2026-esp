@@ -103,13 +103,12 @@ Algunas aclaraciones sobre el código de conducta:
 
 - Esto significa: si no estás siguiendo, ¡por favor pregunta! 🙋‍♀️
 
-- Voy a interrumpir la clase para ayudarles a solucionar problemas en sus computadores; lo haremos hablando los pasos, así si alguien está en la misma situación podrá aprender a solucionarlo.
+- Voy a interrumpir la clase para ayudarles a solucionar problemas en sus computadores; podemos compartir la pantalla y ver juntos el problema o irnos a un break out room si alguien lo prefiere.
 
-- Si sabes cómo ayudar a tu vecino(a), ¡hazlo! 🤝
+- Si sabes cómo ayudar a tu vecino(a), ¡hazlo! (ayudanos contestando preguntas en el chat) 🤝
 
 - Todas las preguntas son bienvenidas, válidas, y TODAS las personas respetarán tu voz. 💫
 
-- No se permitirá ni tolerará troleo, bullying, ni ningún comportamiento irrespetuoso. ❌
 
 
 ## ¡Tu primer proyecto en R!
@@ -122,17 +121,6 @@ Al final del taller habrás creado:
 3. La base reproducible para tu próximo análisis en investigación clínica.
 
 ::::
-::::
-
-
-## Objetivos de hoy
-::::{.incremental}
-- Reconocer la importancia de trabajar dentro de proyectos e iniciar un nuevo proyecto en RStudio.
-- Crear el primer documento en Quarto y entender sus componentes.
-- Aprender a importar datos desde distintas fuentes (Excel, CSV, SPSS, paquetes de R).
-- Explorar un conjunto de datos e identificar diferentes tipos de variables.
-- Usar `tidyverse` para manipulación de datos.
-- Generar resultados descriptivos reproducibles con `gtsummary`.
 ::::
 
 
@@ -184,9 +172,7 @@ Al final del taller habrás creado:
 
 ## Ahora que tenemos un proyecto
 
-- Vamos a crear un script y explorar el IDE
-
-> (Entorno de Desarrollo Integrado)
+- Vamos a crear un script y explorar el IDE (Entorno de Desarrollo Integrado)
 
 :::: {.fragment}
 ![](https://media.giphy.com/media/lYjA4tfvCc8UAju1Op/giphy.gif?cid=790b76114ceilsw854km4k6b0tkgvdqv0xy5sb6e5n7rratd&ep=v1_gifs_search&rid=giphy.gif&ct=g){fig-align="center"}
@@ -427,15 +413,14 @@ ggplot(
     data = penguins,
     aes(x = species, y = flipper_length_mm)
 ) +
-    geom_boxplot(aes(color = species),
-        width = 0.3,
-        show.legend = FALSE
-    ) +
-    geom_jitter(aes(color = species),
+    geom_boxplot(aes(color = species), width = 0.3, show.legend = FALSE) +
+    geom_jitter(
+        aes(color = species),
         alpha = 0.5,
         show.legend = FALSE,
         position = position_jitter(
-            width = 0.2, seed = 0
+            width = 0.2,
+            seed = 0
         )
     ) +
     scale_color_manual(values = c("darkorange", "purple", "cyan4")) +
@@ -940,7 +925,9 @@ covid_testing %>%
     add_p() %>%
     add_overall() %>%
     bold_labels() %>%
-    modify_caption("**Tabla 1.** Características de la muestra según resultado de la prueba COVID-19")
+    modify_caption(
+        "**Tabla 1.** Características de la muestra según resultado de la prueba COVID-19"
+    )
 ```
 
 
