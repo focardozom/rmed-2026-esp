@@ -18,7 +18,7 @@
     "href": "sesion_1.html#antes-de-empezar",
     "title": "Promover la Equidad Científica: Introducción a R",
     "section": "Antes de empezar… ⚡",
-    "text": "Antes de empezar… ⚡\nAlgunas aclaraciones sobre el código de conducta: ¡Iremos tan rápido como la persona más lenta en la sala! 🐢\n\nEsto significa: si no estás siguiendo, ¡por favor pregunta! 🙋‍♀️\nVoy a interrumpir la clase para ayudarles a solucionar problemas en sus computadores; lo haremos hablando los pasos, así si alguien está en la misma situación podrá aprender a solucionarlo.\nSi sabes cómo ayudar a tu vecino(a), ¡hazlo! 🤝\nTodas las preguntas son bienvenidas, válidas, y TODAS las personas respetarán tu voz. 💫\nNo se permitirá ni tolerará troleo, bullying, ni ningún comportamiento irrespetuoso. ❌"
+    "text": "Antes de empezar… ⚡\nAlgunas aclaraciones sobre el código de conducta: ¡Iremos tan rápido como la persona más lenta en la sala! 🐢\n\nEsto significa: si no estás siguiendo, ¡por favor pregunta! 🙋‍♀️\nVoy a interrumpir la clase para ayudarles a solucionar problemas en sus computadores; podemos compartir la pantalla y ver juntos el problema o irnos a un break out room si alguien lo prefiere.\nSi sabes cómo ayudar a tu vecino(a), ¡hazlo! (ayudanos contestando preguntas en el chat) 🤝\nTodas las preguntas son bienvenidas, válidas, y TODAS las personas respetarán tu voz. 💫"
   },
   {
     "objectID": "sesion_1.html#tu-primer-proyecto-en-r",
@@ -26,13 +26,6 @@
     "title": "Promover la Equidad Científica: Introducción a R",
     "section": "¡Tu primer proyecto en R!",
     "text": "¡Tu primer proyecto en R!\n\nAl final del taller habrás creado:\n\nUn proyecto de RStudio bien organizado.\nUn documento Quarto que importa datos médicos, los explora y genera una tabla descriptiva lista para publicación.\nLa base reproducible para tu próximo análisis en investigación clínica."
-  },
-  {
-    "objectID": "sesion_1.html#objetivos-de-hoy",
-    "href": "sesion_1.html#objetivos-de-hoy",
-    "title": "Promover la Equidad Científica: Introducción a R",
-    "section": "Objetivos de hoy",
-    "text": "Objetivos de hoy\n\nReconocer la importancia de trabajar dentro de proyectos e iniciar un nuevo proyecto en RStudio.\nCrear el primer documento en Quarto y entender sus componentes.\nAprender a importar datos desde distintas fuentes (Excel, CSV, SPSS, paquetes de R).\nExplorar un conjunto de datos e identificar diferentes tipos de variables.\nUsar tidyverse para manipulación de datos.\nGenerar resultados descriptivos reproducibles con gtsummary."
   },
   {
     "objectID": "sesion_1.html#cómo-se-siente-aprender-r",
@@ -81,7 +74,7 @@
     "href": "sesion_1.html#ahora-que-tenemos-un-proyecto",
     "title": "Promover la Equidad Científica: Introducción a R",
     "section": "Ahora que tenemos un proyecto",
-    "text": "Ahora que tenemos un proyecto\n\nVamos a crear un script y explorar el IDE\n\n\n(Entorno de Desarrollo Integrado)"
+    "text": "Ahora que tenemos un proyecto\n\nVamos a crear un script y explorar el IDE (Entorno de Desarrollo Integrado)"
   },
   {
     "objectID": "sesion_1.html#creando-el-script",
@@ -228,7 +221,7 @@
     "href": "sesion_1.html#visualicemos-nuestros-hallazgos",
     "title": "Promover la Equidad Científica: Introducción a R",
     "section": "Visualicemos nuestros hallazgos",
-    "text": "Visualicemos nuestros hallazgos\n\nCrea otro chunk, y revisemos:\n\n\nggplot(\n    data = penguins,\n    aes(x = species, y = flipper_length_mm)\n) +\n    geom_boxplot(aes(color = species),\n        width = 0.3,\n        show.legend = FALSE\n    ) +\n    geom_jitter(aes(color = species),\n        alpha = 0.5,\n        show.legend = FALSE,\n        position = position_jitter(\n            width = 0.2, seed = 0\n        )\n    ) +\n    scale_color_manual(values = c(\"darkorange\", \"purple\", \"cyan4\")) +\n    labs(\n        x = \"Species\",\n        y = \"Flipper length (mm)\"\n    )"
+    "text": "Visualicemos nuestros hallazgos\n\nCrea otro chunk, y revisemos:\n\n\nggplot(\n    data = penguins,\n    aes(x = species, y = flipper_length_mm)\n) +\n    geom_boxplot(aes(color = species), width = 0.3, show.legend = FALSE) +\n    geom_jitter(\n        aes(color = species),\n        alpha = 0.5,\n        show.legend = FALSE,\n        position = position_jitter(\n            width = 0.2,\n            seed = 0\n        )\n    ) +\n    scale_color_manual(values = c(\"darkorange\", \"purple\", \"cyan4\")) +\n    labs(\n        x = \"Species\",\n        y = \"Flipper length (mm)\"\n    )"
   },
   {
     "objectID": "sesion_1.html#estamos-listos-para-renderizar-nuestro-reporte",
@@ -473,7 +466,7 @@
     "href": "sesion_1.html#personalizando-etiquetas-para-publicación",
     "title": "Promover la Equidad Científica: Introducción a R",
     "section": "Personalizando etiquetas para publicación",
-    "text": "Personalizando etiquetas para publicación\n\ncovid_testing %&gt;%\n    select(age, gender, drive_thru_ind, ct_result, result) %&gt;%\n    tbl_summary(\n        by = result,\n        label = list(\n            age ~ \"Edad (años)\",\n            gender ~ \"Sexo\",\n            drive_thru_ind ~ \"Atención drive-thru\",\n            ct_result ~ \"Valor Ct (PCR)\"\n        ),\n        missing_text = \"Datos faltantes\"\n    ) %&gt;%\n    add_p() %&gt;%\n    add_overall() %&gt;%\n    bold_labels() %&gt;%\n    modify_caption(\"**Tabla 1.** Características de la muestra según resultado de la prueba COVID-19\")\n\n\n\n\n\nTabla 1. Características de la muestra según resultado de la prueba COVID-19\n\n\n\n\n\n\n\n\n\n\nCharacteristic\nOverall\nN = 15,5241\ninvalid\nN = 3011\nnegative\nN = 14,3581\npositive\nN = 8651\np-value2\n\n\n\n\nEdad (años)\n9 (2, 18)\n12 (2, 24)\n8 (2, 18)\n15 (4, 27)\n&lt;0.001\n\n\nSexo\n\n\n\n\n\n\n\n\n0.5\n\n\n    female\n7,832 (50%)\n146 (49%)\n7,237 (50%)\n449 (52%)\n\n\n\n\n    male\n7,692 (50%)\n155 (51%)\n7,121 (50%)\n416 (48%)\n\n\n\n\nAtención drive-thru\n7,987 (51%)\n118 (39%)\n7,390 (51%)\n479 (55%)\n&lt;0.001\n\n\nValor Ct (PCR)\n45.00 (45.00, 45.00)\n45.00 (45.00, 45.00)\n45.00 (45.00, 45.00)\n29.36 (22.98, 36.41)\n&lt;0.001\n\n\n    Datos faltantes\n209\n72\n132\n5\n\n\n\n\n\n1 Median (Q1, Q3); n (%)\n\n\n2 Kruskal-Wallis rank sum test; Pearson’s Chi-squared test"
+    "text": "Personalizando etiquetas para publicación\n\ncovid_testing %&gt;%\n    select(age, gender, drive_thru_ind, ct_result, result) %&gt;%\n    tbl_summary(\n        by = result,\n        label = list(\n            age ~ \"Edad (años)\",\n            gender ~ \"Sexo\",\n            drive_thru_ind ~ \"Atención drive-thru\",\n            ct_result ~ \"Valor Ct (PCR)\"\n        ),\n        missing_text = \"Datos faltantes\"\n    ) %&gt;%\n    add_p() %&gt;%\n    add_overall() %&gt;%\n    bold_labels() %&gt;%\n    modify_caption(\n        \"**Tabla 1.** Características de la muestra según resultado de la prueba COVID-19\"\n    )\n\n\n\n\n\nTabla 1. Características de la muestra según resultado de la prueba COVID-19\n\n\n\n\n\n\n\n\n\n\nCharacteristic\nOverall\nN = 15,5241\ninvalid\nN = 3011\nnegative\nN = 14,3581\npositive\nN = 8651\np-value2\n\n\n\n\nEdad (años)\n9 (2, 18)\n12 (2, 24)\n8 (2, 18)\n15 (4, 27)\n&lt;0.001\n\n\nSexo\n\n\n\n\n\n\n\n\n0.5\n\n\n    female\n7,832 (50%)\n146 (49%)\n7,237 (50%)\n449 (52%)\n\n\n\n\n    male\n7,692 (50%)\n155 (51%)\n7,121 (50%)\n416 (48%)\n\n\n\n\nAtención drive-thru\n7,987 (51%)\n118 (39%)\n7,390 (51%)\n479 (55%)\n&lt;0.001\n\n\nValor Ct (PCR)\n45.00 (45.00, 45.00)\n45.00 (45.00, 45.00)\n45.00 (45.00, 45.00)\n29.36 (22.98, 36.41)\n&lt;0.001\n\n\n    Datos faltantes\n209\n72\n132\n5\n\n\n\n\n\n1 Median (Q1, Q3); n (%)\n\n\n2 Kruskal-Wallis rank sum test; Pearson’s Chi-squared test"
   },
   {
     "objectID": "sesion_1.html#exportar-la-tabla-a-word-pdf-o-html",
