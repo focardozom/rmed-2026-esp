@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+  --rmed-primary: #009473;
+  --rmed-primary-dark: #006850;
+  --rmed-primary-light: #26c8a2;
+  --rmed-primary-bg: #f4fcf9;
+  --rmed-text: #222222;
+}
+
+.reveal {
+  background-color: var(--rmed-primary-bg);
+  color: var(--rmed-text);
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.reveal pre code {
+  border: 2px solid var(--rmed-primary);
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: var(--rmed-text);
+  padding: 1em;
+}
+
+.reveal code {
+  background-color: #e6f5f0;
+  color: var(--rmed-primary-dark);
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  color: var(--rmed-primary);
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 700;
+}
+
+.reveal a {
+  color: var(--rmed-primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.reveal a:hover {
+  color: var(--rmed-primary-dark);
+  text-decoration: underline;
+}
+
+.reveal mark {
+  background-color: var(--rmed-primary-light);
+  color: var(--rmed-text);
+  padding: 0.05em 0.25em;
+  border-radius: 3px;
+}
+
+.reveal .slide-number {
+  color: var(--rmed-primary);
+}

@@ -1,0 +1,632 @@
+[
+  {
+    "objectID": "sesion_1.html#durante-las-próximas-3-horas-vamos-a",
+    "href": "sesion_1.html#durante-las-próximas-3-horas-vamos-a",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Durante las próximas 3 horas vamos a: 🚀",
+    "text": "Durante las próximas 3 horas vamos a: 🚀\n\n📊 Repasar cómo usar R y RStudio\n📝 Aprender a usar Quarto para reportes reproducibles\n📥 Importar datos desde distintas fuentes (Excel, CSV, SPSS, paquetes de R)\n🔍 Explorar conjuntos de datos médicos\n🔧 Aprender a usar tidyverse para manipulación de datos\n🩺 Generar tablas descriptivas listas para publicación con gtsummary"
+  },
+  {
+    "objectID": "sesion_1.html#cómo",
+    "href": "sesion_1.html#cómo",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "¿Cómo? 💡",
+    "text": "¿Cómo? 💡\n\n\nEste taller será principalmente práctico: ustedes seguirán mis presentaciones y programarán conmigo.\n¡Vamos a usar datos de la vida real! 📈\n\n\n\nEncuesta rápida: ¿Qué tan familiarizado(a) estás con R?\n\nPrincipiante absoluto\nAlgo de experiencia\nIntermedio\nAvanzado"
+  },
+  {
+    "objectID": "sesion_1.html#antes-de-empezar",
+    "href": "sesion_1.html#antes-de-empezar",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Antes de empezar… ⚡",
+    "text": "Antes de empezar… ⚡\nAlgunas aclaraciones sobre el código de conducta: ¡Iremos tan rápido como la persona más lenta en la sala! 🐢\n\nEsto significa: si no estás siguiendo, ¡por favor pregunta! 🙋‍♀️\nVoy a interrumpir la clase para ayudarles a solucionar problemas en sus computadores; lo haremos hablando los pasos, así si alguien está en la misma situación podrá aprender a solucionarlo.\nSi sabes cómo ayudar a tu vecino(a), ¡hazlo! 🤝\nTodas las preguntas son bienvenidas, válidas, y TODAS las personas respetarán tu voz. 💫\nNo se permitirá ni tolerará troleo, bullying, ni ningún comportamiento irrespetuoso. ❌"
+  },
+  {
+    "objectID": "sesion_1.html#tu-primer-proyecto-en-r",
+    "href": "sesion_1.html#tu-primer-proyecto-en-r",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "¡Tu primer proyecto en R!",
+    "text": "¡Tu primer proyecto en R!\n\nAl final del taller habrás creado:\n\nUn proyecto de RStudio bien organizado.\nUn documento Quarto que importa datos médicos, los explora y genera una tabla descriptiva lista para publicación.\nLa base reproducible para tu próximo análisis en investigación clínica."
+  },
+  {
+    "objectID": "sesion_1.html#objetivos-de-hoy",
+    "href": "sesion_1.html#objetivos-de-hoy",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Objetivos de hoy",
+    "text": "Objetivos de hoy\n\nReconocer la importancia de trabajar dentro de proyectos e iniciar un nuevo proyecto en RStudio.\nCrear el primer documento en Quarto y entender sus componentes.\nAprender a importar datos desde distintas fuentes (Excel, CSV, SPSS, paquetes de R).\nExplorar un conjunto de datos e identificar diferentes tipos de variables.\nUsar tidyverse para manipulación de datos.\nGenerar resultados descriptivos reproducibles con gtsummary."
+  },
+  {
+    "objectID": "sesion_1.html#cómo-se-siente-aprender-r",
+    "href": "sesion_1.html#cómo-se-siente-aprender-r",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Cómo se siente aprender R",
+    "text": "Cómo se siente aprender R"
+  },
+  {
+    "objectID": "sesion_1.html#el-mejor-consejo",
+    "href": "sesion_1.html#el-mejor-consejo",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "El mejor consejo…",
+    "text": "El mejor consejo…\n\nEl mejor consejo para trabajar en R es organizar tu trabajo dentro de proyectos.\n¿Por qué?\nReproducibilidad\nOrganización\nMás razones aquí"
+  },
+  {
+    "objectID": "sesion_1.html#pasos-para-crear-el-proyecto",
+    "href": "sesion_1.html#pasos-para-crear-el-proyecto",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Pasos para crear el proyecto",
+    "text": "Pasos para crear el proyecto"
+  },
+  {
+    "objectID": "sesion_1.html#pasos-para-crear-el-proyecto-1",
+    "href": "sesion_1.html#pasos-para-crear-el-proyecto-1",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Pasos para crear el proyecto",
+    "text": "Pasos para crear el proyecto"
+  },
+  {
+    "objectID": "sesion_1.html#pasos-para-crear-el-proyecto-2",
+    "href": "sesion_1.html#pasos-para-crear-el-proyecto-2",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Pasos para crear el proyecto",
+    "text": "Pasos para crear el proyecto"
+  },
+  {
+    "objectID": "sesion_1.html#pasos-para-crear-el-proyecto-3",
+    "href": "sesion_1.html#pasos-para-crear-el-proyecto-3",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Pasos para crear el proyecto",
+    "text": "Pasos para crear el proyecto"
+  },
+  {
+    "objectID": "sesion_1.html#ahora-que-tenemos-un-proyecto",
+    "href": "sesion_1.html#ahora-que-tenemos-un-proyecto",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Ahora que tenemos un proyecto",
+    "text": "Ahora que tenemos un proyecto\n\nVamos a crear un script y explorar el IDE\n\n\n(Entorno de Desarrollo Integrado)"
+  },
+  {
+    "objectID": "sesion_1.html#creando-el-script",
+    "href": "sesion_1.html#creando-el-script",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Creando el script",
+    "text": "Creando el script"
+  },
+  {
+    "objectID": "sesion_1.html#el-ide-de-rstudio",
+    "href": "sesion_1.html#el-ide-de-rstudio",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "El IDE de RStudio",
+    "text": "El IDE de RStudio"
+  },
+  {
+    "objectID": "sesion_1.html#tomemos-un-descanso",
+    "href": "sesion_1.html#tomemos-un-descanso",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Tomemos un descanso",
+    "text": "Tomemos un descanso"
+  },
+  {
+    "objectID": "sesion_1.html#inspeccionando-el-archivo",
+    "href": "sesion_1.html#inspeccionando-el-archivo",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Inspeccionando el archivo",
+    "text": "Inspeccionando el archivo"
+  },
+  {
+    "objectID": "sesion_1.html#diferentes-ejemplos-de-yaml",
+    "href": "sesion_1.html#diferentes-ejemplos-de-yaml",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Diferentes ejemplos de YAML",
+    "text": "Diferentes ejemplos de YAML"
+  },
+  {
+    "objectID": "sesion_1.html#anatomía-de-un-chunk",
+    "href": "sesion_1.html#anatomía-de-un-chunk",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Anatomía de un chunk",
+    "text": "Anatomía de un chunk"
+  },
+  {
+    "objectID": "sesion_1.html#opciones-de-chunk",
+    "href": "sesion_1.html#opciones-de-chunk",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Opciones de chunk",
+    "text": "Opciones de chunk\n\nFuente: Code Chunks"
+  },
+  {
+    "objectID": "sesion_1.html#más-sobre-chunks",
+    "href": "sesion_1.html#más-sobre-chunks",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Más sobre chunks",
+    "text": "Más sobre chunks\nCrea chunks como un(a) pro"
+  },
+  {
+    "objectID": "sesion_1.html#más-sobre-chunks-1",
+    "href": "sesion_1.html#más-sobre-chunks-1",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Más sobre chunks",
+    "text": "Más sobre chunks\nNombra tus chunks como un(a) pro usando kebab-case"
+  },
+  {
+    "objectID": "sesion_1.html#ejemplo-de-chunk-de-código",
+    "href": "sesion_1.html#ejemplo-de-chunk-de-código",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Ejemplo de chunk de código",
+    "text": "Ejemplo de chunk de código"
+  },
+  {
+    "objectID": "sesion_1.html#texto-en-markdown-1",
+    "href": "sesion_1.html#texto-en-markdown-1",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Texto en Markdown",
+    "text": "Texto en Markdown\nAhora que tenemos un reporte con un encabezado y algo de código, necesitamos explicar qué está haciendo el código y por qué.\n\nAquí entra el texto plano.\nFuera de un bloque de código, escribe lo que quieras. Incluso puedes incluir imágenes y tablas."
+  },
+  {
+    "objectID": "sesion_1.html#texto-en-markdown-2",
+    "href": "sesion_1.html#texto-en-markdown-2",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Texto en Markdown",
+    "text": "Texto en Markdown"
+  },
+  {
+    "objectID": "sesion_1.html#referencias-cruzadas",
+    "href": "sesion_1.html#referencias-cruzadas",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Referencias cruzadas",
+    "text": "Referencias cruzadas\n\n\nTablas\n\nSiempre empiezan con tbl-\n\n\n\nFiguras\n\nSiempre empiezan con fig-"
+  },
+  {
+    "objectID": "sesion_1.html#formato-de-texto",
+    "href": "sesion_1.html#formato-de-texto",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Formato de texto",
+    "text": "Formato de texto\n\nFuente Get Started with Quarto"
+  },
+  {
+    "objectID": "sesion_1.html#encabezados-de-texto",
+    "href": "sesion_1.html#encabezados-de-texto",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Encabezados de texto",
+    "text": "Encabezados de texto\n Fuente Get Started with Quarto"
+  },
+  {
+    "objectID": "sesion_1.html#pausa-corta",
+    "href": "sesion_1.html#pausa-corta",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Pausa corta",
+    "text": "Pausa corta"
+  },
+  {
+    "objectID": "sesion_1.html#ejercicio",
+    "href": "sesion_1.html#ejercicio",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Ejercicio",
+    "text": "Ejercicio"
+  },
+  {
+    "objectID": "sesion_1.html#ejercicio-1",
+    "href": "sesion_1.html#ejercicio-1",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Ejercicio",
+    "text": "Ejercicio\n\nVamos al proyecto que creamos\nModifica el YAML con tu información y nombra tu archivo\nRevisa el YAML para que podamos ver el código y los resultados."
+  },
+  {
+    "objectID": "sesion_1.html#ejercicio-2",
+    "href": "sesion_1.html#ejercicio-2",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Ejercicio",
+    "text": "Ejercicio\n\nCrea un chunk y escribe:\n\n\ninstall.packages(\"table1\")\n\nlibrary(table1)\nlibrary(tidyverse)"
+  },
+  {
+    "objectID": "sesion_1.html#ejercicio-3",
+    "href": "sesion_1.html#ejercicio-3",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Ejercicio",
+    "text": "Ejercicio\n¿Hay diferencias entre las especies de pingüinos con respecto a la longitud de sus aletas?\n\nCrea un chunk y carga los datos de palmerpenguins\n\n\ndata(\"penguins\")\n\n\nCrea otro chunk, ponle nombre, y explora los datos de la longitud de aleta para los diferentes tipos de pingüinos con este código:\n\n\ntable1(~ flipper_length_mm | species, data = penguins)\n\n\nDescribe lo que ves en la tabla."
+  },
+  {
+    "objectID": "sesion_1.html#visualicemos-nuestros-hallazgos",
+    "href": "sesion_1.html#visualicemos-nuestros-hallazgos",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Visualicemos nuestros hallazgos",
+    "text": "Visualicemos nuestros hallazgos\n\nCrea otro chunk, y revisemos:\n\n\nggplot(\n    data = penguins,\n    aes(x = species, y = flipper_length_mm)\n) +\n    geom_boxplot(aes(color = species),\n        width = 0.3,\n        show.legend = FALSE\n    ) +\n    geom_jitter(aes(color = species),\n        alpha = 0.5,\n        show.legend = FALSE,\n        position = position_jitter(\n            width = 0.2, seed = 0\n        )\n    ) +\n    scale_color_manual(values = c(\"darkorange\", \"purple\", \"cyan4\")) +\n    labs(\n        x = \"Species\",\n        y = \"Flipper length (mm)\"\n    )"
+  },
+  {
+    "objectID": "sesion_1.html#estamos-listos-para-renderizar-nuestro-reporte",
+    "href": "sesion_1.html#estamos-listos-para-renderizar-nuestro-reporte",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Estamos listos para renderizar nuestro reporte",
+    "text": "Estamos listos para renderizar nuestro reporte\nGuarda tu reporte y…"
+  },
+  {
+    "objectID": "sesion_1.html#un-poco-más-de-esa-magia-reproducible",
+    "href": "sesion_1.html#un-poco-más-de-esa-magia-reproducible",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Un poco más de esa magia reproducible",
+    "text": "Un poco más de esa magia reproducible\nDentro del texto puedes incluir código ejecutable con la sintaxis:\n\nPor ejemplo:\nHay 344 filas en el conjunto de datos penguins.\nLa verdad:"
+  },
+  {
+    "objectID": "sesion_1.html#más-recursos",
+    "href": "sesion_1.html#más-recursos",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Más recursos",
+    "text": "Más recursos\nSitio web de Quarto\nR Markdown: The Definitive Guide"
+  },
+  {
+    "objectID": "sesion_1.html#tomemos-otro-descanso",
+    "href": "sesion_1.html#tomemos-otro-descanso",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Tomemos otro descanso",
+    "text": "Tomemos otro descanso"
+  },
+  {
+    "objectID": "sesion_1.html#resumen",
+    "href": "sesion_1.html#resumen",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Resumen",
+    "text": "Resumen\n\nExploramos los conceptos fundamentales de la ciencia de datos.\nProfundizamos en la historia y evolución de R.\nAprendimos a crear y gestionar proyectos en RStudio.\nGanamos práctica trabajando con archivos Quarto."
+  },
+  {
+    "objectID": "sesion_1.html#leyendo-datos-en-nuestros-archivos-quarto",
+    "href": "sesion_1.html#leyendo-datos-en-nuestros-archivos-quarto",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Leyendo datos en nuestros archivos Quarto",
+    "text": "Leyendo datos en nuestros archivos Quarto\n\nR puede leer datos desde una variedad de formatos, incluyendo:\n\nExcel (por ejemplo, CSV, XLSX, TXT)\nSAS\nStata\nSPSS\nOtros paquetes estadísticos"
+  },
+  {
+    "objectID": "sesion_1.html#consigamos-los-datos",
+    "href": "sesion_1.html#consigamos-los-datos",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Consigamos los datos",
+    "text": "Consigamos los datos\n\nDesde Excel\nDesde .csv\nDesde .sav\nDesde R"
+  },
+  {
+    "objectID": "sesion_1.html#paquete-rio-una-navaja-suiza-para-datos",
+    "href": "sesion_1.html#paquete-rio-una-navaja-suiza-para-datos",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Paquete rio: una navaja suiza para datos",
+    "text": "Paquete rio: una navaja suiza para datos\n\n\n\n\n\ninstall.packages(\"rio\")\n\n\nlibrary(rio)\n\n\n\n\n\nyrbs_2021_df &lt;- import(\"data/yrbs_2021.csv\")"
+  },
+  {
+    "objectID": "sesion_1.html#paquete-rio-una-navaja-suiza-para-datos-1",
+    "href": "sesion_1.html#paquete-rio-una-navaja-suiza-para-datos-1",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Paquete rio: una navaja suiza para datos",
+    "text": "Paquete rio: una navaja suiza para datos\n\n\n\n\n\nyrbs_2021_xlsx &lt;- import(\"data/yrbs_2021.xlsx\")"
+  },
+  {
+    "objectID": "sesion_1.html#paquete-rio-una-navaja-suiza-para-datos-2",
+    "href": "sesion_1.html#paquete-rio-una-navaja-suiza-para-datos-2",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Paquete rio: una navaja suiza para datos",
+    "text": "Paquete rio: una navaja suiza para datos\n\n\n\n\n\nyrbs_2021_sav &lt;- import(\"data/yrbs_2021.sav\")"
+  },
+  {
+    "objectID": "sesion_1.html#exportar-datos-desde-un-paquete",
+    "href": "sesion_1.html#exportar-datos-desde-un-paquete",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Exportar datos desde un paquete",
+    "text": "Exportar datos desde un paquete\n\n\n\n\ninstall.packages(\"medicaldata\")\n\n\n\n\n\nlibrary(medicaldata)\nlibrary(tidyverse)\n\n\n\n\n\ndata(\"covid_testing\")"
+  },
+  {
+    "objectID": "sesion_1.html#explora-el-conjunto-de-datos",
+    "href": "sesion_1.html#explora-el-conjunto-de-datos",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Explora el conjunto de datos",
+    "text": "Explora el conjunto de datos\n\nVeamos dos formas de explorar conjuntos de datos en R:\n\n\n\nLa forma más simple y tradicional:\n\n\nglimpse(covid_testing)\n\nRows: 15,524\nColumns: 17\n$ subject_id      &lt;dbl&gt; 1412, 533, 9134, 8518, 8967, 11048, 663, 2158, 3794, 4…\n$ fake_first_name &lt;chr&gt; \"jhezane\", \"penny\", \"grunt\", \"melisandre\", \"rolley\", \"…\n$ fake_last_name  &lt;chr&gt; \"westerling\", \"targaryen\", \"rivers\", \"swyft\", \"karstar…\n$ gender          &lt;chr&gt; \"female\", \"female\", \"male\", \"female\", \"male\", \"female\"…\n$ pan_day         &lt;dbl&gt; 4, 7, 7, 8, 8, 8, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10, 10, 1…\n$ test_id         &lt;chr&gt; \"covid\", \"covid\", \"covid\", \"covid\", \"covid\", \"covid\", …\n$ clinic_name     &lt;chr&gt; \"inpatient ward a\", \"clinical lab\", \"clinical lab\", \"c…\n$ result          &lt;chr&gt; \"negative\", \"negative\", \"negative\", \"negative\", \"negat…\n$ demo_group      &lt;chr&gt; \"patient\", \"patient\", \"patient\", \"patient\", \"patient\",…\n$ age             &lt;dbl&gt; 0.0, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.0, 0.9, 0.9,…\n$ drive_thru_ind  &lt;dbl&gt; 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, …\n$ ct_result       &lt;dbl&gt; 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45…\n$ orderset        &lt;dbl&gt; 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, …\n$ payor_group     &lt;chr&gt; \"government\", \"commercial\", NA, NA, \"government\", \"com…\n$ patient_class   &lt;chr&gt; \"inpatient\", \"not applicable\", NA, NA, \"emergency\", \"r…\n$ col_rec_tat     &lt;dbl&gt; 1.4, 2.3, 7.3, 5.8, 1.2, 1.4, 2.6, 0.7, 1.0, 7.1, 2.5,…\n$ rec_ver_tat     &lt;dbl&gt; 5.2, 5.8, 4.7, 5.0, 6.4, 7.0, 4.2, 6.3, 5.6, 7.0, 3.8,…"
+  },
+  {
+    "objectID": "sesion_1.html#explora-el-conjunto-de-datos-1",
+    "href": "sesion_1.html#explora-el-conjunto-de-datos-1",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Explora el conjunto de datos",
+    "text": "Explora el conjunto de datos\n\nLa forma más detallada (en mi opinión personal):\n\n\n# install.packages(\"skimr\")\nlibrary(skimr)\nskim(covid_testing)\n\n\nData summary\n\n\nName\ncovid_testing\n\n\nNumber of rows\n15524\n\n\nNumber of columns\n17\n\n\n_______________________\n\n\n\nColumn type frequency:\n\n\n\ncharacter\n9\n\n\nnumeric\n8\n\n\n________________________\n\n\n\nGroup variables\nNone\n\n\n\nVariable type: character\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmin\nmax\nempty\nn_unique\nwhitespace\n\n\n\n\nfake_first_name\n0\n1.00\n3\n13\n0\n832\n0\n\n\nfake_last_name\n0\n1.00\n4\n11\n0\n27\n0\n\n\ngender\n0\n1.00\n4\n6\n0\n2\n0\n\n\ntest_id\n0\n1.00\n5\n5\n0\n2\n0\n\n\nclinic_name\n0\n1.00\n3\n32\n0\n88\n0\n\n\nresult\n0\n1.00\n7\n8\n0\n3\n0\n\n\ndemo_group\n0\n1.00\n6\n12\n0\n5\n0\n\n\npayor_group\n7087\n0.54\n5\n18\n0\n7\n0\n\n\npatient_class\n7077\n0.54\n9\n23\n0\n9\n0\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\n\nsubject_id\n0\n1.00\n5570.65\n3613.70\n1.00\n2329.75\n5268.0\n8636.25\n12346.0\n▇▆▆▆▅\n\n\npan_day\n0\n1.00\n63.21\n27.22\n4.00\n38.00\n65.0\n87.00\n107.0\n▃▇▆▇▇\n\n\nage\n0\n1.00\n14.19\n16.47\n0.00\n2.00\n9.0\n18.00\n138.0\n▇▁▁▁▁\n\n\ndrive_thru_ind\n0\n1.00\n0.51\n0.50\n0.00\n0.00\n1.0\n1.00\n1.0\n▇▁▁▁▇\n\n\nct_result\n209\n0.99\n44.12\n3.98\n14.05\n45.00\n45.0\n45.00\n45.0\n▁▁▁▁▇\n\n\norderset\n0\n1.00\n0.70\n0.46\n0.00\n0.00\n1.0\n1.00\n1.0\n▃▁▁▁▇\n\n\ncol_rec_tat\n0\n1.00\n7.22\n492.82\n0.00\n0.70\n1.9\n3.60\n61370.2\n▇▁▁▁▁\n\n\nrec_ver_tat\n0\n1.00\n5.64\n5.09\n-18.60\n4.00\n5.0\n6.20\n218.2\n▇▁▁▁▁"
+  },
+  {
+    "objectID": "sesion_1.html#tipos-de-variables",
+    "href": "sesion_1.html#tipos-de-variables",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Tipos de variables",
+    "text": "Tipos de variables"
+  },
+  {
+    "objectID": "sesion_1.html#cómo-verlo-en-los-datos",
+    "href": "sesion_1.html#cómo-verlo-en-los-datos",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "¿Cómo verlo en los datos?",
+    "text": "¿Cómo verlo en los datos?"
+  },
+  {
+    "objectID": "sesion_1.html#ahora-te-toca-a-ti",
+    "href": "sesion_1.html#ahora-te-toca-a-ti",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "¡Ahora te toca a ti!",
+    "text": "¡Ahora te toca a ti!\n\n\n\nEn tus proyectos:\n\n¡Abramos Posit Cloud y creemos nuestros proyectos!"
+  },
+  {
+    "objectID": "sesion_1.html#tidyverse",
+    "href": "sesion_1.html#tidyverse",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": " Tidyverse",
+    "text": "Tidyverse\n\nUna colección de paquetes de R 📦s desarrollados por H. Wickham y colaboradores en Posit."
+  },
+  {
+    "objectID": "sesion_1.html#tidyverse-1",
+    "href": "sesion_1.html#tidyverse-1",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Tidyverse",
+    "text": "Tidyverse\n\nUn marco para gestionar datos que busca hacer mucho más fáciles los pasos de limpieza y preparación\nCaracterísticas principales de un conjunto de datos “tidy”:\n\nCada variable es una columna\nCada observación es una fila\nCada valor está en una celda distinta"
+  },
+  {
+    "objectID": "sesion_1.html#tidy-data",
+    "href": "sesion_1.html#tidy-data",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Tidy Data",
+    "text": "Tidy Data"
+  },
+  {
+    "objectID": "sesion_1.html#cuándo-limpiamos-los-datos",
+    "href": "sesion_1.html#cuándo-limpiamos-los-datos",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "¿Cuándo limpiamos los datos?",
+    "text": "¿Cuándo limpiamos los datos?"
+  },
+  {
+    "objectID": "sesion_1.html#flujo-de-trabajo-en-ciencia-de-datos-con-tidyverse",
+    "href": "sesion_1.html#flujo-de-trabajo-en-ciencia-de-datos-con-tidyverse",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Flujo de trabajo en ciencia de datos con Tidyverse",
+    "text": "Flujo de trabajo en ciencia de datos con Tidyverse"
+  },
+  {
+    "objectID": "sesion_1.html#el-operador-pipe-y-luego",
+    "href": "sesion_1.html#el-operador-pipe-y-luego",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "El operador pipe %>% (y luego)",
+    "text": "El operador pipe %&gt;% (y luego)"
+  },
+  {
+    "objectID": "sesion_1.html#el-operador-pipe-y-luego-1",
+    "href": "sesion_1.html#el-operador-pipe-y-luego-1",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "El operador pipe %>% (y luego)",
+    "text": "El operador pipe %&gt;% (y luego)"
+  },
+  {
+    "objectID": "sesion_1.html#el-operador-pipe-y-luego-2",
+    "href": "sesion_1.html#el-operador-pipe-y-luego-2",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "El operador pipe %>% (y luego)",
+    "text": "El operador pipe %&gt;% (y luego)"
+  },
+  {
+    "objectID": "sesion_1.html#el-operador-pipe-y-luego-3",
+    "href": "sesion_1.html#el-operador-pipe-y-luego-3",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "El operador pipe %>% (y luego)",
+    "text": "El operador pipe %&gt;% (y luego)"
+  },
+  {
+    "objectID": "sesion_1.html#el-operador-pipe-y-luego-4",
+    "href": "sesion_1.html#el-operador-pipe-y-luego-4",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "El operador pipe %>% (y luego)",
+    "text": "El operador pipe %&gt;% (y luego)\n\n\n\nEste |&gt; también es un pipe\n\n-Atajo de teclado:\n\nEn Mac: command + shift + m\nEn Windows: ctrl + shift + m"
+  },
+  {
+    "objectID": "sesion_1.html#dato-curioso",
+    "href": "sesion_1.html#dato-curioso",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Dato curioso",
+    "text": "Dato curioso\n\nEl %&gt;% viene de un paquete llamado magrittr\nUna referencia clara al famoso cuadro “The Treachery of Images” del pintor belga René Magritte."
+  },
+  {
+    "objectID": "sesion_1.html#diferencia-entre-r-base-y-tidyverse",
+    "href": "sesion_1.html#diferencia-entre-r-base-y-tidyverse",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Diferencia entre R base y tidyverse",
+    "text": "Diferencia entre R base y tidyverse\n\nDatos de Star Wars del paquete dplyr"
+  },
+  {
+    "objectID": "sesion_1.html#explorando-el-conjunto-de-datos-de-star-wars",
+    "href": "sesion_1.html#explorando-el-conjunto-de-datos-de-star-wars",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Explorando el conjunto de datos de Star Wars",
+    "text": "Explorando el conjunto de datos de Star Wars\n\nstarwars\n\n\n\n# A tibble: 87 × 14\n   name     height  mass hair_color skin_color eye_color birth_year sex   gender\n   &lt;chr&gt;     &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; \n 1 Luke Sk…    172    77 blond      fair       blue            19   male  mascu…\n 2 C-3PO       167    75 &lt;NA&gt;       gold       yellow         112   none  mascu…\n 3 R2-D2        96    32 &lt;NA&gt;       white, bl… red             33   none  mascu…\n 4 Darth V…    202   136 none       white      yellow          41.9 male  mascu…\n 5 Leia Or…    150    49 brown      light      brown           19   fema… femin…\n 6 Owen La…    178   120 brown, gr… light      blue            52   male  mascu…\n 7 Beru Wh…    165    75 brown      light      blue            47   fema… femin…\n 8 R5-D4        97    32 &lt;NA&gt;       white, red red             NA   none  mascu…\n 9 Biggs D…    183    84 black      light      brown           24   male  mascu…\n10 Obi-Wan…    182    77 auburn, w… fair       blue-gray       57   male  mascu…\n# ℹ 77 more rows\n# ℹ 5 more variables: homeworld &lt;chr&gt;, species &lt;chr&gt;, films &lt;list&gt;,\n#   vehicles &lt;list&gt;, starships &lt;list&gt;\n\n\n\n\nskim(starwars)\n\n\n\n\nData summary\n\n\nName\nstarwars\n\n\nNumber of rows\n87\n\n\nNumber of columns\n14\n\n\n_______________________\n\n\n\nColumn type frequency:\n\n\n\ncharacter\n8\n\n\nlist\n3\n\n\nnumeric\n3\n\n\n________________________\n\n\n\nGroup variables\nNone\n\n\n\nVariable type: character\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmin\nmax\nempty\nn_unique\nwhitespace\n\n\n\n\nname\n0\n1.00\n3\n21\n0\n87\n0\n\n\nhair_color\n5\n0.94\n4\n13\n0\n11\n0\n\n\nskin_color\n0\n1.00\n3\n19\n0\n31\n0\n\n\neye_color\n0\n1.00\n3\n13\n0\n15\n0\n\n\nsex\n4\n0.95\n4\n14\n0\n4\n0\n\n\ngender\n4\n0.95\n8\n9\n0\n2\n0\n\n\nhomeworld\n10\n0.89\n4\n14\n0\n48\n0\n\n\nspecies\n4\n0.95\n3\n14\n0\n37\n0\n\n\n\nVariable type: list\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nn_unique\nmin_length\nmax_length\n\n\n\n\nfilms\n0\n1\n24\n1\n7\n\n\nvehicles\n0\n1\n11\n0\n2\n\n\nstarships\n0\n1\n16\n0\n5\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\n\nheight\n6\n0.93\n174.60\n34.77\n66\n167.0\n180\n191.0\n264\n▂▁▇▅▁\n\n\nmass\n28\n0.68\n97.31\n169.46\n15\n55.6\n79\n84.5\n1358\n▇▁▁▁▁\n\n\nbirth_year\n44\n0.49\n87.57\n154.69\n8\n35.0\n52\n72.0\n896\n▇▁▁▁▁"
+  },
+  {
+    "objectID": "sesion_1.html#diferencia-entre-r-base-y-tidyverse-1",
+    "href": "sesion_1.html#diferencia-entre-r-base-y-tidyverse-1",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Diferencia entre R base y tidyverse",
+    "text": "Diferencia entre R base y tidyverse\nCalculemos el IMC (índice de masa corporal) para cada personaje del conjunto de datos\n\n\nR base 🤢\n\nstarwars$bmi &lt;- starwars$mass / (starwars$height / 100)^2\n\n\n\n\n\ntidyverse 😎\n\nstarwars_bmi &lt;-\n    starwars %&gt;%\n    mutate(bmi = mass / ((height / 100)^2)) %&gt;%\n    select(bmi, everything()) # To see the created variable first\n\n\n\n\nstarwars_bmi\n\n# A tibble: 87 × 15\n     bmi name      height  mass hair_color skin_color eye_color birth_year sex  \n   &lt;dbl&gt; &lt;chr&gt;      &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;\n 1  26.0 Luke Sky…    172    77 blond      fair       blue            19   male \n 2  26.9 C-3PO        167    75 &lt;NA&gt;       gold       yellow         112   none \n 3  34.7 R2-D2         96    32 &lt;NA&gt;       white, bl… red             33   none \n 4  33.3 Darth Va…    202   136 none       white      yellow          41.9 male \n 5  21.8 Leia Org…    150    49 brown      light      brown           19   fema…\n 6  37.9 Owen Lars    178   120 brown, gr… light      blue            52   male \n 7  27.5 Beru Whi…    165    75 brown      light      blue            47   fema…\n 8  34.0 R5-D4         97    32 &lt;NA&gt;       white, red red             NA   none \n 9  25.1 Biggs Da…    183    84 black      light      brown           24   male \n10  23.2 Obi-Wan …    182    77 auburn, w… fair       blue-gray       57   male \n# ℹ 77 more rows\n# ℹ 6 more variables: gender &lt;chr&gt;, homeworld &lt;chr&gt;, species &lt;chr&gt;,\n#   films &lt;list&gt;, vehicles &lt;list&gt;, starships &lt;list&gt;"
+  },
+  {
+    "objectID": "sesion_1.html#por-qué-gtsummary",
+    "href": "sesion_1.html#por-qué-gtsummary",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "¿Por qué gtsummary? 🩺",
+    "text": "¿Por qué gtsummary? 🩺\n\nEn investigación médica casi todo manuscrito comienza con la “Tabla 1”: características de la muestra.\nHacer esa tabla a mano en Word es lento, propenso a errores y no es reproducible.\ngtsummary genera tablas descriptivas listas para publicación desde un solo bloque de código.\nEs el estándar de facto en R para reportes clínicos."
+  },
+  {
+    "objectID": "sesion_1.html#una-tabla-descriptiva-en-una-línea",
+    "href": "sesion_1.html#una-tabla-descriptiva-en-una-línea",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Una tabla descriptiva en una línea",
+    "text": "Una tabla descriptiva en una línea\n\ninstall.packages(\"gtsummary\")\n\n\nlibrary(gtsummary)\n\ncovid_testing %&gt;%\n    select(age, gender, result, drive_thru_ind, ct_result) %&gt;%\n    tbl_summary()\n\n\n\n\n\n\n\n\n\n\n\nCharacteristic\nN = 15,5241\n\n\n\n\nage\n9 (2, 18)\n\n\ngender\n\n\n\n\n    female\n7,832 (50%)\n\n\n    male\n7,692 (50%)\n\n\nresult\n\n\n\n\n    invalid\n301 (1.9%)\n\n\n    negative\n14,358 (92%)\n\n\n    positive\n865 (5.6%)\n\n\ndrive_thru_ind\n7,987 (51%)\n\n\nct_result\n45.00 (45.00, 45.00)\n\n\n    Unknown\n209\n\n\n\n1 Median (Q1, Q3); n (%)"
+  },
+  {
+    "objectID": "sesion_1.html#estratificando-por-una-variable-clínica",
+    "href": "sesion_1.html#estratificando-por-una-variable-clínica",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Estratificando por una variable clínica",
+    "text": "Estratificando por una variable clínica\n¿En qué se diferencian los pacientes con resultado positivo vs negativo?\n\ncovid_testing %&gt;%\n    select(age, gender, drive_thru_ind, ct_result, result) %&gt;%\n    tbl_summary(by = result)\n\n\n\n\n\n\n\n\n\n\n\n\n\nCharacteristic\ninvalid\nN = 3011\nnegative\nN = 14,3581\npositive\nN = 8651\n\n\n\n\nage\n12 (2, 24)\n8 (2, 18)\n15 (4, 27)\n\n\ngender\n\n\n\n\n\n\n\n\n    female\n146 (49%)\n7,237 (50%)\n449 (52%)\n\n\n    male\n155 (51%)\n7,121 (50%)\n416 (48%)\n\n\ndrive_thru_ind\n118 (39%)\n7,390 (51%)\n479 (55%)\n\n\nct_result\n45.00 (45.00, 45.00)\n45.00 (45.00, 45.00)\n29.36 (22.98, 36.41)\n\n\n    Unknown\n72\n132\n5\n\n\n\n1 Median (Q1, Q3); n (%)"
+  },
+  {
+    "objectID": "sesion_1.html#añadiendo-pruebas-estadísticas",
+    "href": "sesion_1.html#añadiendo-pruebas-estadísticas",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Añadiendo pruebas estadísticas",
+    "text": "Añadiendo pruebas estadísticas\nUna sola línea más y tenemos valores p:\n\ncovid_testing %&gt;%\n    select(age, gender, drive_thru_ind, ct_result, result) %&gt;%\n    tbl_summary(by = result) %&gt;%\n    add_p()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCharacteristic\ninvalid\nN = 3011\nnegative\nN = 14,3581\npositive\nN = 8651\np-value2\n\n\n\n\nage\n12 (2, 24)\n8 (2, 18)\n15 (4, 27)\n&lt;0.001\n\n\ngender\n\n\n\n\n\n\n0.5\n\n\n    female\n146 (49%)\n7,237 (50%)\n449 (52%)\n\n\n\n\n    male\n155 (51%)\n7,121 (50%)\n416 (48%)\n\n\n\n\ndrive_thru_ind\n118 (39%)\n7,390 (51%)\n479 (55%)\n&lt;0.001\n\n\nct_result\n45.00 (45.00, 45.00)\n45.00 (45.00, 45.00)\n29.36 (22.98, 36.41)\n&lt;0.001\n\n\n    Unknown\n72\n132\n5\n\n\n\n\n\n1 Median (Q1, Q3); n (%)\n\n\n2 Kruskal-Wallis rank sum test; Pearson’s Chi-squared test"
+  },
+  {
+    "objectID": "sesion_1.html#personalizando-etiquetas-para-publicación",
+    "href": "sesion_1.html#personalizando-etiquetas-para-publicación",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Personalizando etiquetas para publicación",
+    "text": "Personalizando etiquetas para publicación\n\ncovid_testing %&gt;%\n    select(age, gender, drive_thru_ind, ct_result, result) %&gt;%\n    tbl_summary(\n        by = result,\n        label = list(\n            age ~ \"Edad (años)\",\n            gender ~ \"Sexo\",\n            drive_thru_ind ~ \"Atención drive-thru\",\n            ct_result ~ \"Valor Ct (PCR)\"\n        ),\n        missing_text = \"Datos faltantes\"\n    ) %&gt;%\n    add_p() %&gt;%\n    add_overall() %&gt;%\n    bold_labels() %&gt;%\n    modify_caption(\"**Tabla 1.** Características de la muestra según resultado de la prueba COVID-19\")\n\n\n\n\n\nTabla 1. Características de la muestra según resultado de la prueba COVID-19\n\n\n\n\n\n\n\n\n\n\nCharacteristic\nOverall\nN = 15,5241\ninvalid\nN = 3011\nnegative\nN = 14,3581\npositive\nN = 8651\np-value2\n\n\n\n\nEdad (años)\n9 (2, 18)\n12 (2, 24)\n8 (2, 18)\n15 (4, 27)\n&lt;0.001\n\n\nSexo\n\n\n\n\n\n\n\n\n0.5\n\n\n    female\n7,832 (50%)\n146 (49%)\n7,237 (50%)\n449 (52%)\n\n\n\n\n    male\n7,692 (50%)\n155 (51%)\n7,121 (50%)\n416 (48%)\n\n\n\n\nAtención drive-thru\n7,987 (51%)\n118 (39%)\n7,390 (51%)\n479 (55%)\n&lt;0.001\n\n\nValor Ct (PCR)\n45.00 (45.00, 45.00)\n45.00 (45.00, 45.00)\n45.00 (45.00, 45.00)\n29.36 (22.98, 36.41)\n&lt;0.001\n\n\n    Datos faltantes\n209\n72\n132\n5\n\n\n\n\n\n1 Median (Q1, Q3); n (%)\n\n\n2 Kruskal-Wallis rank sum test; Pearson’s Chi-squared test"
+  },
+  {
+    "objectID": "sesion_1.html#exportar-la-tabla-a-word-pdf-o-html",
+    "href": "sesion_1.html#exportar-la-tabla-a-word-pdf-o-html",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Exportar la tabla a Word, PDF o HTML",
+    "text": "Exportar la tabla a Word, PDF o HTML\n\nLas tablas de gtsummary se renderizan automáticamente al formato de salida de tu Quarto (HTML, Word o PDF).\nTambién puedes exportarlas a un archivo independiente:\n\n\nmi_tabla %&gt;%\n    as_gt() %&gt;%\n    gt::gtsave(\"tabla1.docx\") # o \"tabla1.html\", \"tabla1.pdf\"\n\n\nMás opciones: Galería de gtsummary"
+  },
+  {
+    "objectID": "sesion_1.html#ahora-te-toca-a-ti-1",
+    "href": "sesion_1.html#ahora-te-toca-a-ti-1",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "¡Ahora te toca a ti! 💪",
+    "text": "¡Ahora te toca a ti! 💪\n\nEn tu proyecto:\n\nCarga el conjunto de datos indo_rct del paquete medicaldata (un ensayo clínico real sobre prevención de pancreatitis).\nCrea una tabla descriptiva estratificada por la variable outcome (desenlace de pancreatitis).\nPersonaliza al menos una etiqueta y añade el subtítulo “Tabla 1”."
+  },
+  {
+    "objectID": "sesion_1.html#lo-que-aprendimos-hoy",
+    "href": "sesion_1.html#lo-que-aprendimos-hoy",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Lo que aprendimos hoy",
+    "text": "Lo que aprendimos hoy\n\n✅ Crear y organizar proyectos en RStudio.\n✅ Escribir reportes reproducibles con Quarto.\n✅ Importar datos desde Excel, CSV, SPSS y paquetes de R.\n✅ Explorar datos con glimpse() y skim().\n✅ Manipular datos con el tidyverse y el operador pipe.\n✅ Generar tablas descriptivas listas para publicación con gtsummary."
+  },
+  {
+    "objectID": "sesion_1.html#para-seguir-aprendiendo",
+    "href": "sesion_1.html#para-seguir-aprendiendo",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Para seguir aprendiendo 📚",
+    "text": "Para seguir aprendiendo 📚\n\n📘 R for Data Science (2da ed.) — gratis, en línea\n📙 R para Ciencia de Datos — versión en español\n🌐 Sitio web de Quarto\n🩺 Galería de gtsummary\n📦 Paquete medicaldata — datasets clínicos\n💬 Comunidad R-Ladies y R/Medicine"
+  },
+  {
+    "objectID": "sesion_1.html#gracias",
+    "href": "sesion_1.html#gracias",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "¡Gracias! 💜",
+    "text": "¡Gracias! 💜\n\n\n\nCatalina Cañizares, Ph.D.\n🌐 ccani007.github.io\n\nFrancisco Cardozo, Ph.D.\n🌐 focardozom.github.io\n\n¡Gracias por acompañarnos en este viaje!"
+  },
+  {
+    "objectID": "sesion_1.html#referencias",
+    "href": "sesion_1.html#referencias",
+    "title": "Promover la Equidad Científica: Introducción a R",
+    "section": "Referencias",
+    "text": "Referencias"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R-Med en Español",
+    "section": "",
+    "text": "Taller para R/Medicine 2026"
+  },
+  {
+    "objectID": "index.html#sobre-el-taller",
+    "href": "index.html#sobre-el-taller",
+    "title": "R-Med en Español",
+    "section": "Sobre el taller",
+    "text": "Sobre el taller\nEste taller ofrece una introducción práctica al uso de R para el análisis de datos en investigación médica y en salud. Está dirigido a profesionales de la salud, investigadores clínicos y estudiantes sin experiencia previa en programación.\n\n\n\n🕒 Duración\n3 horas\n\n\n👥 Audiencia\nSin experiencia previa en programación\n\n\n🌐 Idioma\nEspañol\n\n\n📍 Evento\nR/Medicine 2026"
+  },
+  {
+    "objectID": "index.html#materiales-del-taller",
+    "href": "index.html#materiales-del-taller",
+    "title": "R-Med en Español",
+    "section": "Materiales del taller",
+    "text": "Materiales del taller\n\n\n🎬 Rompehielos\nPreguntas para empezar a conocernos y romper el hielo. (~15 min)\n\n\n📖 Sesión principal\nR, RStudio, Quarto, importación de datos, tidyverse y análisis descriptivo con gtsummary. (~2h 45min)"
+  },
+  {
+    "objectID": "index.html#objetivos-de-aprendizaje",
+    "href": "index.html#objetivos-de-aprendizaje",
+    "title": "R-Med en Español",
+    "section": "Objetivos de aprendizaje",
+    "text": "Objetivos de aprendizaje\nAl final del taller los participantes podrán:\n\nCrear y organizar un proyecto en RStudio.\nEscribir un reporte reproducible con Quarto.\nImportar datos desde distintas fuentes (Excel, CSV, SPSS, paquetes de R).\nExplorar un conjunto de datos e identificar tipos de variables.\nManipular datos con tidyverse.\nGenerar tablas descriptivas listas para publicación con gtsummary."
+  },
+  {
+    "objectID": "index.html#requisitos-previos",
+    "href": "index.html#requisitos-previos",
+    "title": "R-Med en Español",
+    "section": "Requisitos previos",
+    "text": "Requisitos previos\n\nR (4.0 o superior)\nRStudio (recomendado) o Positron\nQuarto (incluido con RStudio reciente)\n\n\nPaquetes de R\ninstall.packages(c(\n  \"tidyverse\",      # Manipulación y visualización\n  \"rio\",            # Importar datos\n  \"skimr\",          # Resumen exploratorio\n  \"gtsummary\",      # Tablas descriptivas para publicación\n  \"table1\",         # Tablas descriptivas alternativas\n  \"palmerpenguins\", # Dataset de ejemplo\n  \"medicaldata\",    # Datasets clínicos reales\n  \"countdown\"       # Cronómetro para las pausas\n))"
+  },
+  {
+    "objectID": "index.html#instructores",
+    "href": "index.html#instructores",
+    "title": "R-Med en Español",
+    "section": "Instructores",
+    "text": "Instructores\nCatalina Cañizares, Ph.D. — ccani007.github.io\nFrancisco Cardozo, Ph.D. — focardozom.github.io"
+  },
+  {
+    "objectID": "index.html#código-fuente",
+    "href": "index.html#código-fuente",
+    "title": "R-Med en Español",
+    "section": "Código fuente",
+    "text": "Código fuente\nDisponible en github.com/focardozom/rmed-2026-esp."
+  },
+  {
+    "objectID": "index.html#licencia",
+    "href": "index.html#licencia",
+    "title": "R-Med en Español",
+    "section": "Licencia",
+    "text": "Licencia\nPromover la Equidad Científica: Introducción a R © 2026 por Catalina Cañizares y Francisco Cardozo está licenciado bajo Creative Commons Atribución–NoComercial–SinDerivadas 4.0 Internacional."
+  },
+  {
+    "objectID": "inicio.html#fue-amor-a-primera-vista",
+    "href": "inicio.html#fue-amor-a-primera-vista",
+    "title": "R-Med en Español",
+    "section": "💔 ¿Fue amor a primera vista?",
+    "text": "💔 ¿Fue amor a primera vista?\n¿Ha utilizado R alguna vez?\n😱 ¿Fue un flechazo inmediato o más bien una relación complicada?\n💌 Y si ya lo usa… ¿cómo se conocieron por primera vez?"
+  },
+  {
+    "objectID": "inicio.html#y-qué-fue-lo-que-le-atrajo",
+    "href": "inicio.html#y-qué-fue-lo-que-le-atrajo",
+    "title": "R-Med en Español",
+    "section": "😍 ¿Y qué fue lo que le atrajo?",
+    "text": "😍 ¿Y qué fue lo que le atrajo?\n¿Para qué lo utiliza?\n📊 ¿Fue por sus gráficos? ¿Su capacidad de análisis? ¿O simplemente por ser open source y misterioso?"
+  },
+  {
+    "objectID": "inicio.html#y-si-aún-no-ha-caído-en-sus-redes",
+    "href": "inicio.html#y-si-aún-no-ha-caído-en-sus-redes",
+    "title": "R-Med en Español",
+    "section": "🤔 ¿Y si aún no ha caído en sus redes…?",
+    "text": "🤔 ¿Y si aún no ha caído en sus redes…?\n¿Por qué quiere aprender R?\n🌪️ ¿Hay algo que le ha impedido entregarse por completo?\n¿Es miedo, falta de tiempo… o un amor no correspondido con Excel?"
+  },
+  {
+    "objectID": "inicio.html#su-paquete-favorito-por-favor",
+    "href": "inicio.html#su-paquete-favorito-por-favor",
+    "title": "R-Med en Español",
+    "section": "🌟 ¡Su paquete favorito, por favor!",
+    "text": "🌟 ¡Su paquete favorito, por favor!\n¿Cuál es ese paquete que le hace suspirar?\n📦 ¿Hay alguno que aún no ha usado pero que le coquetea desde lejos?"
+  },
+  {
+    "objectID": "inicio.html#qué-le-falta-a-r-para-ser-perfecto",
+    "href": "inicio.html#qué-le-falta-a-r-para-ser-perfecto",
+    "title": "R-Med en Español",
+    "section": "😇 ¿Qué le falta a R para ser perfecto?",
+    "text": "😇 ¿Qué le falta a R para ser perfecto?\nSea honesto…\n💭 ¿Qué le cambiaría? ¿Qué le añadiría para convertirlo en el IDEAL?"
+  },
+  {
+    "objectID": "inicio.html#su-truco-secreto",
+    "href": "inicio.html#su-truco-secreto",
+    "title": "R-Med en Español",
+    "section": "🕵️‍♀️ Su truco secreto…",
+    "text": "🕵️‍♀️ Su truco secreto…\n¿Cuál es esa práctica, truquito o función que siempre le salva el día?\n🧙‍♂️ ¡Comparta su magia!"
+  },
+  {
+    "objectID": "inicio.html#lo-que-no-ha-podido-lograr-aún",
+    "href": "inicio.html#lo-que-no-ha-podido-lograr-aún",
+    "title": "R-Med en Español",
+    "section": "😫 Lo que no ha podido lograr (¡aún!)",
+    "text": "😫 Lo que no ha podido lograr (¡aún!)\n¿Qué sueña hacer en R, pero aún no ha logrado?\n🎯 ¿Un análisis épico? ¿Una app en Shiny? ¿Una visualización que cause lágrimas?"
+  },
+  {
+    "objectID": "inicio.html#confesiones-finales",
+    "href": "inicio.html#confesiones-finales",
+    "title": "R-Med en Español",
+    "section": "🎭 ¡Confesiones Finales!",
+    "text": "🎭 ¡Confesiones Finales!\nSi R fuera una telenovela… ¿cuál sería el título de su historia con él?\n💘 “Entre paréntesis y comillas”\n💥 “Error en la línea 32”\n😵‍💫 “Me dejó por Python”\n¿Otro?"
+  }
+]
