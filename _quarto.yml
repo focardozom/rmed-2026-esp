@@ -1,0 +1,37 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - inicio.qmd
+    - sesion_1.qmd
+  resources:
+    - data/
+    - img/
+
+website:
+  title: "R-Med en Español"
+  description: "Promover la Equidad Científica: Introducción a R — Taller para R/Medicine 2026"
+  site-url: https://focardozom.github.io/rmed-2026-esp/
+  repo-url: https://github.com/focardozom/rmed-2026-esp
+  repo-actions: [edit, source, issue]
+  navbar:
+    background: light
+    left:
+      - href: index.qmd
+        text: Inicio
+      - href: inicio.qmd
+        text: Rompehielos
+      - href: sesion_1.qmd
+        text: Sesión principal
+    right:
+      - icon: github
+        href: https://github.com/focardozom/rmed-2026-esp
+        aria-label: GitHub
+
+format:
+  html:
+    theme: cosmo
+    css: style-copy.css
+    toc: true
+    toc-depth: 2

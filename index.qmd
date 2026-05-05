@@ -1,0 +1,80 @@
+---
+title: "R-Med en Español"
+subtitle: "Promover la Equidad Científica: Introducción a R"
+---
+
+> Taller para [R/Medicine 2026](https://rconsortium.github.io/RMedicine_website/workshops.html#equidad)
+
+## Sobre el taller
+
+Este taller ofrece una **introducción práctica al uso de R para el análisis de datos en investigación médica y en salud**. Está dirigido a profesionales de la salud, investigadores clínicos y estudiantes sin experiencia previa en programación.
+
+| | |
+|---|---|
+| 🕒 **Duración** | 3 horas |
+| 👥 **Audiencia** | Sin experiencia previa en programación |
+| 🌐 **Idioma** | Español |
+| 📍 **Evento** | R/Medicine 2026 |
+
+## Materiales del taller
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+### 🎬 [Rompehielos](inicio.html)
+
+Preguntas para empezar a conocernos y romper el hielo. *(~15 min)*
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### 📖 [Sesión principal](sesion_1.html)
+
+R, RStudio, Quarto, importación de datos, `tidyverse` y análisis descriptivo con `gtsummary`. *(~2h 45min)*
+:::
+
+:::
+
+## Objetivos de aprendizaje
+
+Al final del taller los participantes podrán:
+
+1. Crear y organizar un **proyecto** en RStudio.
+2. Escribir un **reporte reproducible** con Quarto.
+3. **Importar datos** desde distintas fuentes (Excel, CSV, SPSS, paquetes de R).
+4. **Explorar** un conjunto de datos e identificar tipos de variables.
+5. Manipular datos con **`tidyverse`**.
+6. Generar **tablas descriptivas listas para publicación** con `gtsummary`.
+
+## Requisitos previos
+
+- **R** (4.0 o superior)
+- **RStudio** (recomendado) o **Positron**
+- **Quarto** (incluido con RStudio reciente)
+
+### Paquetes de R
+
+```r
+install.packages(c(
+  "tidyverse",      # Manipulación y visualización
+  "rio",            # Importar datos
+  "skimr",          # Resumen exploratorio
+  "gtsummary",      # Tablas descriptivas para publicación
+  "table1",         # Tablas descriptivas alternativas
+  "palmerpenguins", # Dataset de ejemplo
+  "medicaldata",    # Datasets clínicos reales
+  "countdown"       # Cronómetro para las pausas
+))
+```
+
+## Instructores
+
+**Catalina Cañizares, Ph.D.** — [ccani007.github.io](https://ccani007.github.io/ccani_website/)  
+**Francisco Cardozo, Ph.D.** — [focardozom.github.io](https://focardozom.github.io/)
+
+## Código fuente
+
+Disponible en [github.com/focardozom/rmed-2026-esp](https://github.com/focardozom/rmed-2026-esp).
+
+## Licencia
+
+*Promover la Equidad Científica: Introducción a R* © 2026 por Catalina Cañizares y Francisco Cardozo está licenciado bajo [Creative Commons Atribución–NoComercial–SinDerivadas 4.0 Internacional](https://creativecommons.org/licenses/by-nc-nd/4.0/).
